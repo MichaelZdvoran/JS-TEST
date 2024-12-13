@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nákupní košík</title>
+    <link rel="stylesheet" href="/index.css">
+</head>
+<body>
+    <header>
+        <h1>E-shop: Postavy z Arcane</h1>
+    </header>
+    <main>
+        <section class="cart">
+            <h1>Nákupní košík</h1>
+            <input type="text" id="add-item" placeholder="Zadejte jméno postavy">
+            <button onclick="addToCart()">Přidej do košíku</button>
+            <button onclick="clearCart()">Vymazat košík</button>
+            <h3>Výpis košíku</h3>
+            <ul id="cart-list"></ul>
+            <p>Celková cena: <span id="total-price">0</span> Kč</p>
+        </section>
+        <section class="offer">
+            <h3>Naše nabídka</h3>
+            <ul id="item-list"></ul>
+        </section>
+    </main>
+    <script src="/index.js"></script>
+</body>
+</html>
